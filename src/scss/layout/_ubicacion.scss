@@ -1,0 +1,40 @@
+.ubicacion {
+    background-color: $concha;
+    padding: 3rem 0;
+    border: 1px solid darken($color: $concha, $amount: 4);
+    margin: 5rem 1rem 0 1rem;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    p {
+        margin: 5rem 0 0 0 ;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        @include tablet {
+            text-align: right;
+        }
+
+        @include desktopXL {
+            text-align: center;
+        }
+
+    }
+}
+
+.contenedor-ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+
+#map {
+    z-index: 0;
+    width: 130rem;
+    height: 50rem;
+}

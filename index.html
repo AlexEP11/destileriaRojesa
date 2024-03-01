@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destileria Rojesa</title>
+    <link rel="icon" href="build/img/logoRojesaIcon.webp">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+
+<body>
+
+    <header class="header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a class="logo-header" href="index.html">
+                    <img src="build/img/logoRojesa.webp" alt="Icono Rojesa">
+                    <p>Destileria Rojesa</p>
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="build/img/menu.svg" alt="Menu de Celular">
+                </div>
+                
+                <nav class="navegacion">
+                    <a href="tienda.html">Tienda</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                    <div class="dark-mode">
+                        <img src="build/img/dark-mode.svg" alt="Dark Mode Icon">
+                    </div>
+                </nav>
+            </div> <!--Fin de la barra de navegacion -->
+
+            <h1>Fabricación artesanal de Destilados de Agave, Ponche de granada y Productos Gourmet.</h1>
+        </div>
+    </header>
+
+
+    <main class="contenedor">
+        <h1>Más sobre nosotros</h1>
+
+        <div class="iconos-nosotros">
+            <div class="iconos">
+                <img src="build/img/icono1.svg" alt="Icono tres estrellas">
+                <h3>Calidad</h3>
+                <p>En "Destileria Rojesa", nos destacamos por ofrecer la máxima calidad de agave en nuestros destilados.
+                    Cada botella refleja la
+                    pureza y esencia auténtica del agave, seleccionado cuidadosamente para una experiencia única.</p>
+            </div>
+            <div class="iconos">
+                <img src="build/img/icono2.svg" alt="Icono precio">
+                <h3>Precio</h3>
+                <p>En "Destileria Rojesa", nos enorgullece ofrecer destilados de agave a precios inigualables. Creemos
+                    que todos merecen disfrutar de la autenticidad del agave sin comprometer la billetera.</p>
+            </div>
+            <div class="iconos">
+                <img src="build/img/icono3.svg" alt="Icono envio">
+                <h3>Entrega</h3>
+                <p>En "Destileria Rojesa", llevamos la esencia del agave a cada rincón de México. Con entrega a todo el
+                    país, queremos asegurarnos de que puedas disfrutar de nuestros destilados en la comodidad de tu
+                    hogar.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contenedor seccion">
+        <h2>Nuestros Productos Favoritos</h2>
+        <div class="contenedor-anuncio">
+            <div class="anuncio">
+                <picture>
+                    <source srcset="build/img/productos/ponche-granada.webp" type="image/webp">
+                    <source srcset="build/img/productos/ponche-granada.png" type="image/png">
+                    <img loading="lazy" src="build/img/productos/ponche-granada.png" alt="Ponche Granada"
+                        title="Ponche Granada">
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <h3>Ponche de Granada "Premium"</h3>
+                    <p>Es un producto elaborado 100% de Jugo de Granada Wonderful, la cual nos da ese toque de acides
+                        tan especial.
+                    </p>
+                    <p class="precio">$299.00</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="build/img/icono-botella.svg" alt="Icono botella">
+                            <p>1 Lt.</p>
+                        </li>
+                    </ul>
+                    <a href="anuncios.html" class="boton-azul-block">
+                        Ver producto
+                    </a>
+                </div> <!-- fin .contenido-anuncio-->
+            </div> <!--fin .anuncio-->
+
+            <div class="anuncio">
+                <picture>
+                    <source srcset="build/img/productos/licor-cafe.webp" type="image/webp">
+                    <source srcset="build/img/productos/licor-cafe.jpeg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/productos/licor-cafe.jpeg" alt="Licor Cafe" title="Licor Cafe">
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <h3>Licor de Café</h3>
+                    <p>Licor hecho de café artesanal.
+                        Producto elaborado de Café 100% orgánico con Sayulteco Blanco.
+                    </p>
+                    <p class="precio">$189.00</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="build/img/icono-botella.svg" alt="Icono botella">
+                            <p>375 | 750 mlts.</p>
+                        </li>
+                    </ul>
+                    <a href="anuncios.html" class="boton-azul-block">
+                        Ver producto
+                    </a>
+                </div> <!-- fin .contenido-anuncio-->
+            </div> <!--fin .anuncio-->
+
+            <div class="anuncio">
+                <picture>
+                    <source srcset="build/img/productos/sayulteco-agave.webp" type="image/webp">
+                    <source srcset="build/img/productos/sayulteco-agave.jpeg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/productos/sayulteco-agave.jpeg" alt="Sayulteco Agave"
+                        title="Sayulteco Agave">
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <h3>Destilado de Agave Sayulteco Añejo</h3>
+                    <p>Elaborado 100% de Agave Seleccionado con doble destilación, añejado 18 meses en barricas de Roble
+                        Francés.
+
+                    </p>
+                    <p class="precio">$529.00</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="build/img/icono-botella.svg" alt="Icono botella">
+                            <p>750 mlts.</p>
+                        </li>
+                    </ul>
+                    <a href="anuncios.html" class="boton-azul-block">
+                        Ver producto
+                    </a>
+                </div> <!-- fin .contenido-anuncio-->
+            </div> <!--fin .anuncio-->
+
+        </div> <!-- fin .contenedor-anuncio-->
+
+        <div class="ver-todos alinear-derecha">
+            <a href="tienda.html" class="boton-tinto">Ver Todos</a>
+        </div>
+    </section>
+
+
+    <section class="imagen-contacto">
+        <h2>¿Quieres conocer
+            nuestra destilería?</h2>
+        <p>Llena el formulario y un asesor se pondra en contacto contigo a la brevedad</p>
+        <a href="contacto.html" class="boton-azul-inline">Contactanos</a>
+    </section>
+
+    <div class="contenedor seccion seccion-inferior">
+        <section class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/blog-tequila-bueno.webp" type="image/webp">
+                        <source srcset="build/img/blog-tequila-bueno.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/blog-tequila-bueno.jpg" alt="Entrada Blog 1"
+                            title="Entrada Blog 1">
+                    </picture>
+                </div>
+
+                <div class="texto-entrada">
+                    <a href="entrada.html">
+                        <h4>Guia para elegir un tequila bueno</h4>
+                        <p>Escrito el: <span>04/02/2024</span> por: <span>Admin</span></p>
+
+                        <p>¿Buscas un tequila bueno? Existen muchos factores que determinan la calidad del tequila, en
+                            esta guía te enseñamos todo lo necesario para elegir el mejor.</p>
+                    </a>
+                </div>
+            </article>
+
+
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/blog-tequila-recetas.webp" type="image/webp">
+                        <source srcset="build/img/blog-tequila-recetas.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/blog-tequila-recetas.jpg" alt="Entrada Blog 2"
+                            title="Entrada Blog 2">
+                    </picture>
+                </div>
+
+                <div class="texto-entrada">
+                    <a href="entrada.html">
+                        <h4>12 recetas de bebidas con tequila y frutas</h4>
+                        <p>Escrito el: <span>04/02/2024</span> por: <span>Admin</span></p>
+
+                        <p>Si quieres probar algunas bebidas con tequila y frutas aquí encontrarás varias recetas que
+                            puedes preparar de manera sencilla.</p>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="testimoniales">
+            <h3>Testimoniales</h3>
+            <div class="testimonial">
+                <blockquote>
+                    No puedo dejar de elogiar su destilado de agave. Cada sorbo es como un viaje sensorial. La calidad
+                    es asombrosa y el precio, muy razonable. Sin duda, mi elección número uno.
+                </blockquote>
+                <p>- Alex Ponce</p>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="ubicacion">
+        <h3>Ubicación</h3>
+        <div class="contenedor-ubicacion">
+            <div id="map"></div>
+        </div>
+        <p>Direccion: Daniel Larios 260, Magisterio, 49300 Sayula, Jal.</p>
+    </section>
+
+
+
+    <footer class="footer seccion">
+        <div class="contenedor contenido-footer">
+            <div class="barra">
+                <nav class="navegacion">
+                    <a href="tienda.html">Tienda</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/RojesaDestileriaOficial/">
+                        <img src="build/img/brand-facebook.svg" alt="Enlace Facebook">
+                        <p class="facebook">Facebook</p>
+                    </a>
+
+                    <a href="https://www.instagram.com/rojesadestileria/">
+                        <img src="build/img/brand-instagram.svg" alt="Enlace Instagram">
+                        <p class="instagram">Instagram</p>
+                    </a>
+                </div>
+            </div> <!--Fin de la barra de navegacion -->
+            <p class="copyright">Todos los derechos reservados &copy;</p>
+        </div>
+
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+.contenedor-anuncio {
+    @include telefono {
+        @include grid(2, 5rem);
+    }
+
+    @include desktop {
+        @include grid(3, 5rem);
+    }
+}
+
+.anuncio {
+    margin-top: 3rem;
+    background-color: $concha;
+    border: 2px solid darken($color: $concha, $amount: 4);
+
+    @include tablet {
+        margin-top: 0;
+    }
+
+    picture {
+
+        @include tablet{
+         height: 33.5rem;
+        }
+
+        @include desktop{
+         max-height: 36.5rem;
+        }
+
+        height: auto;
+        overflow: hidden;
+        
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contenido-anuncio {
+    padding: 3rem;
+
+    h3, p {
+        margin: 0;
+        overflow: hidden;
+
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .precio {
+        color: $tinto;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    
+    li {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        flex: 0 0 3rem;
+    }
+
+    p {
+        font-weight: 700;
+    }
+}

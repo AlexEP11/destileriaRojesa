@@ -1,0 +1,56 @@
+.dark-mode {
+    filter: invert(100);
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+
+    @include tablet{ 
+        margin: 0 0 0 3rem 0;
+    }
+
+
+    &:hover {
+        cursor: pointer;
+        height: 3rem;
+        transition: height .1s ease-in
+    }
+
+}
+
+.oscuro {
+
+    background-color: darken($color: $grisOscuro, $amount: 12);
+    
+
+    p, h1, h2, h3, h4, blockquote, label{
+        color: $blanco;
+    }
+
+    .anuncio {
+        background-color: darken($color: $concha, $amount: 15);
+        border-color: darken($color: $concha, $amount:25);
+        p, h3 {
+           color: $negro; 
+        }
+        .precio {
+            color: $tinto;
+        }
+    }
+
+
+    .ubicacion {
+        h3, p {
+
+            color: $negro;
+        }
+    }
+
+    fieldset {
+        p, legend {
+            color: $blanco;
+        }
+
+    }
+
+
+}

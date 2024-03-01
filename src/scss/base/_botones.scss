@@ -1,0 +1,12 @@
+.boton-azul-block {
+    @include boton($azulMarino, block);
+}
+
+.boton-azul-inline {
+    @include boton($azulMarino, inline-block);
+}
+
+
+.boton-tinto {
+    @include boton($tinto, inline-block);
+}

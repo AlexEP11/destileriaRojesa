@@ -1,0 +1,55 @@
+.footer {
+    padding: 2.5rem 0;
+    background-color: $cafe;
+    margin-bottom: 0;
+
+    .contenido-footer {
+        padding-top: 2.5rem;
+
+        p {
+            color: $blanco;
+        }
+    }
+
+    .copyright {    
+        text-align: center;
+    }
+
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        width: 5rem;
+        margin-right: .5rem;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        margin-right: 5rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+    }
+}
+
+
+.facebook,
+.instagram {
+    font-size: 1.5rem;
+
+}
+
